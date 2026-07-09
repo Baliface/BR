@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bali Records • Cloud Rap</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
+       
+        body { font-family: 'Inter', system_ui, sans-serif; }
+       
+        .section-title {
+            font-size: 2.85rem;
+            line-height: 1.05;
+            font-weight: 700;
+            letter-spacing: -0.04em;
+        }
+        .release-card, .artist-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .release-card:hover, .artist-card:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+    <!-- Navbar -->
+    <nav class="sticky top-0 z-50 border-b border-white/10 bg-zinc-950/95 backdrop-blur-xl">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center gap-x-3">
+                    <img src="bali-logo-new-circle.png" alt="Bali Records" class="h-9">
+                </div>
+                <div class="hidden md:flex items-center gap-x-9 text-sm font-medium">
+                    <a href="#signed" class="hover:text-red-500 transition-colors">Подписанты</a>
+                    <a href="#artists" class="hover:text-red-500 transition-colors">Твои кумиры</a>
+                    <a href="#releases" class="hover:text-red-500 transition-colors">Релизы</a>
+                    <a href="#about" class="hover:text-red-500 transition-colors">О лейбле</a>
+                    <a href="#submit" class="hover:text-red-500 transition-colors">Отправить демо</a>
+                </div>
+                <a href="https://t.me/BaliMUSIC1" target="_blank"
+                   class="flex items-center gap-x-2 px-5 py-2.5 rounded-2xl bg-white/5 hover:bg-white/10 border border-white/10 text-sm font-medium transition-colors">
+                    <i class="fa-brands fa-telegram text-lg"></i>
+                    <span>СМИ</span>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="relative min-h-screen flex items-center justify-center bg-black overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(at_center,rgba(239,68,68,0.045)_0%,transparent_72%)]"></div>
+       
+        <div class="relative z-10 text-center px-6 pt-8">
+            <div class="flex justify-center mb-9">
+                <img src="bali-logo-new.png" alt="Bali Records"
+                     class="w-[94%] max-w-[940px]">
+            </div>
+            
+            <p class="text-xl md:text-2xl text-zinc-400 mb-10 tracking-tight">
+                *для реальных soundcloud игроков
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#releases"
+                   class="px-9 py-4 bg-white text-zinc-950 font-semibold rounded-3xl flex items-center justify-center gap-x-2 text-lg hover:bg-zinc-100 transition-all">
+                    <i class="fa-solid fa-play mr-1"></i>
+                    Слушать релизы
+                </a>
+                <a href="#submit"
+                   class="px-9 py-4 border border-white/40 hover:bg-white/10 font-semibold rounded-3xl text-lg transition-all">
+                    Отправить демо
+                </a>
+            </div>
+        </div>
+        
+        <div class="absolute bottom-8 text-xs text-zinc-500 tracking-widest">
+            SoundCloud • Spotify • YouTube
+        </div>
+    </header>
+
+    <!-- НАШИ ПОДПИСАНТЫ -->
+    <section id="signed" class="max-w-7xl mx-auto px-6 py-20 border-t border-white/10 bg-black">
+        <div class="flex items-end justify-between mb-12">
+            <div>
+                <span class="text-red-500 text-sm font-medium tracking-[3px]">НАШИ ПОДПИСАНТЫ (РАБЫ)</span>
+                <h2 class="section-title">Актуальные артисты лейбла</h2>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div class="artist-card group">
+                <div class="aspect-square bg-zinc-900 rounded-3xl overflow-hidden border border-white/10">
+                    <img src="vopros-photo.jpg" class="w-full h-full object-cover transition-transform duration-500" alt="K1D">
+                </div>
+                <div class="mt-5 px-1">
+                    <h3 class="font-semibold text-2xl">???</h3>
+                    <p class="text-zinc-400 text-sm">SC RAP • ???</p>
+                    <p class="text-red-500 text-xs mt-1">???</p>
+                </div>
+            </div>
+            <div class="artist-card group">
+                <div class="aspect-square bg-zinc-900 rounded-3xl overflow-hidden border border-white/10">
+                    <img src="vopros-photo.jpg" class="w-full h-full object-cover transition-transform duration-500" alt="VØID">
+                </div>
+                <div class="mt-5 px-1">
+                    <h3 class="font-semibold text-2xl">???</h3>
+                    <p class="text-zinc-400 text-sm">SC RAP • ???</p>
+                    <p class="text-red-500 text-xs mt-1">???</p>
+                </div>
+            </div>
+            <div class="artist-card group">
+                <div class="aspect-square bg-zinc-900 rounded-3xl overflow-hidden border border-white/10">
+                    <img src="vopros-photo.jpg" class="w-full h-full object-cover transition-transform duration-500" alt="NIGHT PRINCE">
+                </div>
+                <div class="mt-5 px-1">
+                    <h3 class="font-semibold text-2xl">???</h3>
+                    <p class="text-zinc-400 text-sm">SC RAP • ???</p>
+                    <p class="text-red-500 text-xs mt-1">???</p>
+                </div>
+            </div>
+            <div class="artist-card group">
+                <div class="aspect-square bg-zinc-900 rounded-3xl overflow-hidden border border-white/10">
+                    <img src="vopros-photo.jpg" class="w-full h-full object-cover transition-transform duration-500" alt="ARCHIV">
+                </div>
+                <div class="mt-5 px-1">
+                    <h3 class="font-semibold text-2xl">???</h3>
+                    <p class="text-zinc-400 text-sm">SC RAP • ???</p>
+                    <p class="text-red-500 text-xs mt-1">???</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ТВОИ КУМИРЫ -->
+    <section id="artists" class="max-w-7xl mx-auto px-6 py-16 border-t border-white/10">
+        <div class="flex items-end justify-between mb-12">
+            <div>
+                <span class="text-red-500 text-sm font-medium tracking-[3px]">ТВОИ КУМИРЫ</span>
+                <h2 class="section-title">Надеемся вы станете такими же популярными</h2>
+            </div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div class="group">
+                <div class="aspect-square bg-zinc-900 rounded-3xl overflow-hidden border border-white/10">
+                    <img src="madk1d-photo.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Madk1d">
+                </div>
+                <div class="mt-5 px-1">
+                    <h3 class="font-semibold text-2xl">Madk1d</h3>
+                    <p class="text-zinc-400 text-sm">SC RAP • МНОГО ДЕНЕГ В КЕЙСЕ</p>
+                </div>
+            </div>
+            <div class="group">
+                <div class="aspect-square bg-zinc-900 rounded-3xl overflow-hidden border border-white/10">
+                    <img src="prince-photo.png" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Темный Принц">
+                </div>
+                <div class="mt-5 px-1">
+                    <h3 class="font-semibold text-2xl">Темный Принц</h3>
+                    <p class="text-zinc-400 text-sm">SC RAP • РИЛ ОЧЕНЬ ПОПУЛЯРНЫЙ</p>
+                </div>
+            </div>
+            <div class="group">
+                <div class="aspect-square bg-zinc-900 rounded-3xl overflow-hidden border border-white/10">
+                    <img src="fortuna-photo.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="VØID">
+                </div>
+                <div class="mt-5 px-1">
+                    <h3 class="font-semibold text-2xl">FORTUNA812</h3>
+                    <p class="text-zinc-400 text-sm">SC RAP • ОН СОЗДАЛ АРХИВКОР</p>
+                </div>
+            </div>
+            <div class="group">
+                <div class="aspect-square bg-zinc-900 rounded-3xl overflow-hidden border border-white/10">
+                    <img src="tewiq-photo.jpg" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" alt="Новый артист">
+                </div>
+                <div class="mt-5 px-1">
+                    <h3 class="font-semibold text-2xl">TEWIQ</h3>
+                    <p class="text-zinc-400 text-sm">SC RAP • ОН ПОХОДУ ПОПАЛ</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Releases -->
+    <section id="releases" class="max-w-7xl mx-auto px-6 py-20 border-t border-white/10">
+        <div class="flex items-end justify-between mb-12">
+            <div>
+                <span class="text-red-500 text-sm font-medium tracking-[3px]">СЛУШАЙ ПЕСНИ ОНЛАЙН</span>
+                <h2 class="section-title">Недавние дропы</h2>
+            </div>
+            <a href="#" class="hidden md:flex items-center gap-x-2 text-sm font-medium hover:text-red-400 transition-colors">
+                Все релизы <i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Release 1 -->
+            <div class="release-card bg-zinc-900 border border-white/10 rounded-3xl overflow-hidden group">
+                <div class="aspect-square bg-zinc-800 relative">
+                    <img src="vopros-photo.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-black/70"></div>
+                    <div class="absolute bottom-5 right-5">
+                        <button onclick="playDemo(this)" class="w-14 h-14 bg-red-600 hover:bg-red-500 rounded-full flex items-center justify-center transition-all">
+                            <i class="fa-solid fa-play text-white ml-0.5"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="p-7">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-semibold text-2xl">???</h3>
+                            <p class="text-zinc-400">???</p>
+                        </div>
+                        <span class="text-xs px-3 py-1 bg-white/10 rounded-full">2026</span>
+                    </div>
+                    
+                    <div class="mt-5">
+                        <a href="#" class="flex items-center justify-center gap-x-2 w-full text-center py-3 border border-white/20 hover:bg-white/5 rounded-2xl text-sm">
+                            <i class="fa-brands fa-soundcloud"></i>
+                            <span>SoundCloud</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Release 2 -->
+            <div class="release-card bg-zinc-900 border border-white/10 rounded-3xl overflow-hidden group">
+                <div class="aspect-square bg-zinc-800 relative">
+                    <img src="vopros-photo.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-black/70"></div>
+                    <div class="absolute bottom-5 right-5">
+                        <button onclick="playDemo(this)" class="w-14 h-14 bg-red-600 hover:bg-red-500 rounded-full flex items-center justify-center transition-all">
+                            <i class="fa-solid fa-play text-white ml-0.5"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="p-7">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-semibold text-2xl">???</h3>
+                            <p class="text-zinc-400">???</p>
+                        </div>
+                        <span class="text-xs px-3 py-1 bg-white/10 rounded-full">2026</span>
+                    </div>
+                    
+                    <div class="mt-5">
+                        <a href="#" class="flex items-center justify-center gap-x-2 w-full text-center py-3 border border-white/20 hover:bg-white/5 rounded-2xl text-sm">
+                            <i class="fa-brands fa-soundcloud"></i>
+                            <span>SoundCloud</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Release 3 -->
+            <div class="release-card bg-zinc-900 border border-white/10 rounded-3xl overflow-hidden group">
+                <div class="aspect-square bg-zinc-800 relative">
+                    <img src="vopros-photo.jpg" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-b from-black/30 to-black/70"></div>
+                    <div class="absolute bottom-5 right-5">
+                        <button onclick="playDemo(this)" class="w-14 h-14 bg-red-600 hover:bg-red-500 rounded-full flex items-center justify-center transition-all">
+                            <i class="fa-solid fa-play text-white ml-0.5"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="p-7">
+                    <div class="flex justify-between items-start">
+                        <div>
+                            <h3 class="font-semibold text-2xl">???</h3>
+                            <p class="text-zinc-400">???</p>
+                        </div>
+                        <span class="text-xs px-3 py-1 bg-white/10 rounded-full">2026</span>
+                    </div>
+                    
+                    <div class="mt-5">
+                        <a href="#" class="flex items-center justify-center gap-x-2 w-full text-center py-3 border border-white/20 hover:bg-white/5 rounded-2xl text-sm">
+                            <i class="fa-brands fa-soundcloud"></i>
+                            <span>SoundCloud</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="max-w-4xl mx-auto px-6 py-24 text-center border-t border-white/10">
+        <h2 class="section-title mb-8">О Bali Records</h2>
+        <p class="text-xl text-zinc-400 max-w-3xl mx-auto leading-relaxed">
+            Это лейбл, где проценты получает не артист, а его компания.
+            Здесь нет случайных релизов — только те, за которые проплатили богатые папы рэперов.
+        </p>
+        <p class="mt-8 text-zinc-400">Основан в 2026 году в деревне Скрытого Дизайнера.</p>
+    </section>
+
+    <!-- Submit Demo (рабочая форма Web3Forms) -->
+    <section id="submit" class="max-w-3xl mx-auto px-6 py-24 border-t border-white/10">
+        <div class="text-center mb-14">
+            <h2 class="section-title">Отправить демо</h2>
+            <p class="text-zinc-400 mt-4">Мы не слушаем каждую работу. Ответим как получится.</p>
+        </div>
+
+        <form action="https://api.web3forms.com/submit" method="POST" class="glass border border-white/10 rounded-3xl p-10 md:p-12 space-y-7">
+            
+            <!-- === ВСТАВЬ СВОЙ ACCESS KEY СЮДА === -->
+            <input type="hidden" name="access_key" value="d4cf43d8-7c97-4edf-a258-cb035c7fb1fa">
+            <input type="hidden" name="subject" value="🎵 Новое демо с сайта Bali Records">
+            <input type="hidden" name="from_name" value="Bali Records - Демо">
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div>
+                    <label class="block text-sm mb-2 text-zinc-400">Имя / Ник</label>
+                    <input type="text" name="name" required class="w-full bg-zinc-900 border border-white/10 rounded-2xl px-5 py-3.5 focus:outline-none focus:border-red-500">
+                </div>
+                <div>
+                    <label class="block text-sm mb-2 text-zinc-400">Email или Telegram</label>
+                    <input type="text" name="contact" required class="w-full bg-zinc-900 border border-white/10 rounded-2xl px-5 py-3.5 focus:outline-none focus:border-red-500">
+                </div>
+            </div>
+
+            <div>
+                <label class="block text-sm mb-2 text-zinc-400">Ссылка на трек (SoundCloud / Google Drive / Dropbox)</label>
+                <input type="url" name="track_link" required class="w-full bg-zinc-900 border border-white/10 rounded-2xl px-5 py-3.5 focus:outline-none focus:border-red-500">
+            </div>
+
+            <div>
+                <label class="block text-sm mb-2 text-zinc-400">Процент лейбла (пиши от 90%)</label>
+                <input type="text" name="percent" required class="w-full bg-zinc-900 border border-white/10 rounded-2xl px-5 py-3.5 focus:outline-none focus:border-red-500">
+            </div>
+
+            <div>
+                <label class="block text-sm mb-2 text-zinc-400">Сообщение</label>
+                <textarea name="message" rows="4" class="w-full bg-zinc-900 border border-white/10 rounded-3xl px-5 py-3.5 focus:outline-none focus:border-red-500 resize-y"></textarea>
+            </div>
+
+            <button type="submit" class="w-full py-5 bg-red-600 hover:bg-red-500 active:bg-red-700 transition-all rounded-3xl font-semibold text-xl">
+                Отправить демо
+            </button>
+
+            <p class="text-center text-xs text-zinc-500">Мы публикуем демо без твоего согласия.</p>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-white/10 py-14">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-y-6 text-sm">
+            <div class="flex items-center gap-x-3">
+                <img src="bali-logo-new-circle.png" alt="Bali Records" class="h-6">
+                <span class="text-zinc-500">© 2026 Bali Records</span>
+            </div>
+            <div class="flex gap-x-8 text-zinc-400">
+                <a href="https://t.me/BaliMUSIC1" class="hover:text-white transition-colors">СМИ ЛЕЙБЛА</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function playDemo(button) {
+            const icon = button.querySelector('i');
+            if (icon.classList.contains('fa-play')) {
+                icon.classList.remove('fa-play');
+                icon.classList.add('fa-pause');
+                button.style.background = '#b91c1c';
+                setTimeout(() => {
+                    icon.classList.remove('fa-pause');
+                    icon.classList.add('fa-play');
+                    button.style.background = '#ef4444';
+                }, 4500);
+            } else {
+                icon.classList.remove('fa-pause');
+                icon.classList.add('fa-play');
+                button.style.background = '#ef4444';
+            }
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+</body>
+</html>
